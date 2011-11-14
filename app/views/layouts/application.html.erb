@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<%= link_to_unless_current "Index", :controller => "estaticas", :action => "index" %>
+	<%= link_to_unless_current "Protegida", :controller => "estaticas", :action => "protegida" %>
+	<%= link_to_unless_current "Registrarse", new_user_path %>
+	
+	
+	<% if !current_user %>
+	<%= link_to "Iniciar Sesión", login_path %>
+	<% else %>
+	||
+	<%= link_to_unless_current "Usuarios", users_path %>
+	<%= link_to "Editar Perfil", edit_user_path(current_user) %>
+	<%= link_to "Cerrar Sesión", logout_path %>
+	<% end %>
+
+<%= yield %>
+
+</body>
+</html>
