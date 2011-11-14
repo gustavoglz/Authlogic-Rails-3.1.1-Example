@@ -1,11 +1,11 @@
 = Example of integration of Authlogic 3.1.0 with Rails 3.1.1 
+
 == Requeriments:
+	(1) Ruby 1.9.2  
+	(2) Rails 3.1.1
+	(3) Authlogic 3.1.0
 
-	1. Ruby 1.9.2  
-	2. Rails 3.1.1
-	3. Authlogic 3.1.0
 == Instructions:
-
-	1. Download the App with git clone git://github.com/gustavoglz/Authlogic-Rails-3.1.1-Example.git in the directory you chose.
-	2. Run on the Terminal rake db:migrate
+	(1) Download the App with git clone git://github.com/gustavoglz/Authlogic-Rails-3.1.1-Example.git in the directory you chose.
+	(2) Run on the Terminal rake db:migrate
 
